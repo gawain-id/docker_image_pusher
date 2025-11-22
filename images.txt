@@ -1,3 +1,6 @@
+# nocobase
+nocobase/nocobase:latest-full
+
 # amplication dep
 postgres:12
 redis:latest

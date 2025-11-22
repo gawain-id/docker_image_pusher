@@ -1,3 +1,4 @@
+mysql:lts
 #支持别名（格式为 '--alias=custom_image_name' ）
 #--alias=mynginx nginx
 #--alias=mynginx nginx:1.26.2-alpine-perl
@@ -28,4 +29,4 @@
 #ezdata123/ezdata:1.0.1
 #ezdata123/ezdata-web:1.0.1
 #--alias=nacos-server223 nacos/nacos-server:v2.2.3
---alias=shareopenjdk21 amazoncorretto:21
+#--alias=shareopenjdk21 amazoncorretto:21

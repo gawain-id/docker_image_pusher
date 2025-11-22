@@ -1,3 +1,5 @@
+# illasoft
+illasoft/illa-builder:latest
 # nocobase
 nocobase/nocobase:latest-full
 

@@ -1,3 +1,9 @@
+# amplication dep
+postgres:12
+redis:latest
+docker.redpanda.com/redpandadata/console:latest
+confluentinc/cp-kafka:7.3.1
+
 alpine
 mysql:lts
 #支持别名（格式为 '--alias=custom_image_name' ）

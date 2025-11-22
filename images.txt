@@ -3,6 +3,7 @@ postgres:12
 redis:latest
 docker.redpanda.com/redpandadata/console:latest
 confluentinc/cp-kafka:7.3.1
+confluentinc/cp-zookeeper:7.3.1
 
 alpine
 mysql:lts

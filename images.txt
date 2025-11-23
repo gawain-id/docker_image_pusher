@@ -1,6 +1,5 @@
 # postgres
 postgres:17
-postgres:17-alpine⁠
 dpage/pgadmin4:latest
 
 # illasoft

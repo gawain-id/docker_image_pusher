@@ -1,3 +1,5 @@
+# appsmith
+index.docker.io/appsmith/appsmith-ee
 # lowcoder
 lowcoderorg/lowcoder-ce:latest
 # mysql-workbench

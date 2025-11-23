@@ -1,3 +1,5 @@
+# lowcoder
+lowcoderorg/lowcoder-ce:latest
 # mysql-workbench
 lscr.io/linuxserver/mysql-workbench:latest
 # postgres

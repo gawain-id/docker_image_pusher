@@ -1,5 +1,7 @@
 # postgres
 postgres:17
+dpage/pgadmin4:7.5
+
 # illasoft
 illasoft/illa-builder:latest
 # nocobase

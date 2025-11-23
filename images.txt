@@ -1,3 +1,5 @@
+# postgres
+postgres:17
 # illasoft
 illasoft/illa-builder:latest
 # nocobase

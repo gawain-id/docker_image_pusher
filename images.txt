@@ -1,27 +1,27 @@
-# appsmith
-index.docker.io/appsmith/appsmith-ee
-# lowcoder
-lowcoderorg/lowcoder-ce:latest
-# mysql-workbench
-lscr.io/linuxserver/mysql-workbench:latest
-# postgres
-postgres:17
-dpage/pgadmin4:latest
+## appsmith
+#index.docker.io/appsmith/appsmith-ee
+## lowcoder
+#lowcoderorg/lowcoder-ce:latest
+## mysql-workbench
+#lscr.io/linuxserver/mysql-workbench:latest
+## postgres
+#postgres:17
+#dpage/pgadmin4:latest
 
-# illasoft
-illasoft/illa-builder:latest
-# nocobase
-nocobase/nocobase:latest-full
+## illasoft
+#illasoft/illa-builder:latest
+## nocobase
+#nocobase/nocobase:latest-full
 
-# amplication dep
-postgres:12
-redis:latest
-docker.redpanda.com/redpandadata/console:latest
-confluentinc/cp-kafka:7.3.1
-confluentinc/cp-zookeeper:7.3.1
+## amplication dep
+#postgres:12
+#redis:latest
+#docker.redpanda.com/redpandadata/console:latest
+#confluentinc/cp-kafka:7.3.1
+#confluentinc/cp-zookeeper:7.3.1
 
-alpine
-mysql:lts
+#alpine
+#mysql:lts
 #支持别名（格式为 '--alias=custom_image_name' ）
 #--alias=mynginx nginx
 #--alias=mynginx nginx:1.26.2-alpine-perl

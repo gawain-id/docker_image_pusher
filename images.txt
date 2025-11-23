@@ -1,3 +1,5 @@
+# mysql-workbench
+lscr.io/linuxserver/mysql-workbench:latest
 # postgres
 postgres:17
 dpage/pgadmin4:latest

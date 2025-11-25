@@ -1,3 +1,6 @@
+## postgres
+postgres:16
+
 ## tooljet
 tooljet/tooljet:ee-lts-latest
 

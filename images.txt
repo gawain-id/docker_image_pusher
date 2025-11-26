@@ -1,5 +1,5 @@
 ## Oracle Database XE
---alias=oracle-db-express container-registry.oracle.com/database/express:latest
+oracle/database:21.3.0-xe
 
 ## postgres
 #postgres:16

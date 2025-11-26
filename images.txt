@@ -1,8 +1,11 @@
+## Oracle Database XE
+container-registry.oracle.com/database/express:latest
+
 ## postgres
-postgres:16
+#postgres:16
 
 ## tooljet
-tooljet/tooljet:ee-lts-latest
+#tooljet/tooljet:ee-lts-latest
 
 ## appsmith
 #index.docker.io/appsmith/appsmith-ee

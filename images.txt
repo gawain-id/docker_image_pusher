@@ -1,5 +1,8 @@
+## camunda
+camunda/camunda:8.8.5
+
 ## Oracle Database XE
-oracle/database:21.3.0-xe
+#oracle/database:21.3.0-xe
 
 ## postgres
 #postgres:16

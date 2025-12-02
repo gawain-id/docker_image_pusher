@@ -6,7 +6,7 @@
 #camunda/identity:8.8.2
 #postgres:15-alpine3.22
 #bitnamilegacy/keycloak:26.3.2
-https://docker.elastic.co/elasticsearch/elasticsearch:8.17.10
+elasticsearch:8.17.10
 axllent/mailpit:v1.21.8
 camunda/web-modeler-restapi:8.8.3
 camunda/web-modeler-webapp8.8.3

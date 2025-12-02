@@ -1,7 +1,8 @@
 ## camunda
 #camunda/camunda:8.8.5
 camunda/connectors-bundle:8.8.3
-camunda/optimize:8.8.5
+camunda/operate:8.8.5
+camunda/optimize:8.8.1
 camunda/identity:8.8.2
 postgres:15-alpine3.22
 bitnamilegacy/keycloak:26.3.2

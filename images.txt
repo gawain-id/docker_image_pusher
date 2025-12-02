@@ -1,5 +1,16 @@
 ## camunda
-camunda/camunda:8.8.5
+#camunda/camunda:8.8.5
+camunda/connectors-bundle:8.8.3
+camunda/optimize:8.8.5
+camunda/identity:8.8.2
+postgres:15-alpine3.22
+bitnamilegacy/keycloak:26.3.2
+elasticsearch/elasticsearch:8.17.10
+axllent/mailpit:v1.21.8
+camunda/web-modeler-restapi:8.8.3
+camunda/web-modeler-webapp8.8.3
+camunda/web-modeler-websockets:8.8.3
+camunda/console:8.8.52
 
 ## Oracle Database XE
 #oracle/database:21.3.0-xe

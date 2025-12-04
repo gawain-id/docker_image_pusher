@@ -1,3 +1,6 @@
+## apache kafka
+apache/kafka:4.1.1
+
 ## camunda
 #camunda/camunda:8.8.5
 #camunda/connectors-bundle:8.8.3
@@ -9,9 +12,9 @@
 #elasticsearch:8.17.10
 #axllent/mailpit:v1.21.8
 #camunda/web-modeler-restapi:8.8.3
-camunda/web-modeler-webapp:8.8.3
-camunda/web-modeler-websockets:8.8.3
-camunda/console:8.8.52
+#camunda/web-modeler-webapp:8.8.3
+#camunda/web-modeler-websockets:8.8.3
+#camunda/console:8.8.52
 
 ## Oracle Database XE
 #oracle/database:21.3.0-xe

@@ -1,5 +1,9 @@
+
+## lakehourse
+bitnami/zookeeper:latest
+
 ## apache kafka
-apache/kafka:4.1.1
+#apache/kafka:4.1.1
 
 ## camunda
 #camunda/camunda:8.8.5

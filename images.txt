@@ -3,13 +3,12 @@
 bitnami/minio:latest
 zookeeper:latest
 bitnami/kafka:latest
-postgres:15
-bde2020/hive-metastore:3.1.2-postgresql
-trinodb/trino:latest
-flink:1.18-scala_2.12
-flink:1.18-scala_2.12
-bitnami/spark:3.5.0
-bitnami/kubectl:latest
+#postgres:15
+#bde2020/hive-metastore:3.1.2-postgresql
+#trinodb/trino:latest
+#flink:1.18-scala_2.12
+3bitnami/spark:3.5.0
+#bitnami/kubectl:latest
 
 ## apache kafka
 #apache/kafka:4.1.1

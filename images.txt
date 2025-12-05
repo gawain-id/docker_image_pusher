@@ -1,6 +1,6 @@
 
 ## lakehourse
-bitnami/minio:latest
+minio/minio:latest
 zookeeper:latest
 bitnami/kafka:latest
 #postgres:15

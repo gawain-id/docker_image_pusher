@@ -8,7 +8,7 @@ apache/kafka:latest
 #bde2020/hive-metastore:3.1.2-postgresql
 #trinodb/trino:latest
 #flink:1.18-scala_2.12
-3bitnami/spark:3.5.0
+#bitnami/spark:3.5.0
 #bitnami/kubectl:latest
 
 ## apache kafka

@@ -2,7 +2,8 @@
 ## lakehourse
 minio/minio:latest
 zookeeper:latest
-bitnami/kafka:latest
+apache/kafka:latest
+
 #postgres:15
 #bde2020/hive-metastore:3.1.2-postgresql
 #trinodb/trino:latest

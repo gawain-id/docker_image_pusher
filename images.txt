@@ -1,12 +1,11 @@
-
 ## lakehourse
-minio/minio:latest
-zookeeper:latest
-apache/kafka:latest
+#minio/minio:latest
+#zookeeper:latest
+#apache/kafka:latest
 
 #postgres:15
-#bde2020/hive-metastore:3.1.2-postgresql
-#trinodb/trino:latest
+bde2020/hive-metastore:3.1.2-postgresql
+trinodb/trino:latest
 #flink:1.18-scala_2.12
 #bitnami/spark:3.5.0
 #bitnami/kubectl:latest

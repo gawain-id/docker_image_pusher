@@ -2,6 +2,7 @@
 #minio/minio:latest
 #zookeeper:latest
 #apache/kafka:latest
+naushadh/hive-metastore:latest
 
 postgres:15
 #apache/hive:3.1.3

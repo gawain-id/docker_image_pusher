@@ -1,4 +1,5 @@
---alias=n8n-latest docker.n8n.io/n8nio/n8n
+## n8n
+docker.n8n.io/n8nio/n8n
 
 ## lakehourse
 #minio/minio:latest

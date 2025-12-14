@@ -1,6 +1,7 @@
 ## corteza
-cortezaproject/corteza:2024.9
-percona:8.0
+#cortezaproject/corteza:2024.9
+#percona:8.0
+cortezaproject/corteza-server-corredor:2024.9
 
 ## n8n
 #docker.n8n.io/n8nio/n8n

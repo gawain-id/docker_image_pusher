@@ -1,4 +1,6 @@
-solr:9
+aos-preview-app
+
+#solr:9
 
 ## corteza
 #cortezaproject/corteza:2024.9

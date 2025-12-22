@@ -1,4 +1,6 @@
-axelor/aos-preview-app:latest
+## axelor
+#axelor/aos-preview-app:latest
+axelor/aos-ce:latest
 
 #solr:9
 

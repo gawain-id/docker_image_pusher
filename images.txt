@@ -1,5 +1,5 @@
 ## shopware
-ghcr.io/shopware/docker-dev:php8.3-node24-caddy
+--alias=shopware-docker-dev ghcr.io/shopware/docker-dev:php8.3-node24-caddy
 
 ## axelor
 #axelor/aos-preview-app:latest

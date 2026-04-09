@@ -1,5 +1,5 @@
 #kafka
-apache/kafka:3.9.0
+#apache/kafka:3.9.0
 
 # gem5
 #ghcr.io/gem5/ubuntu-24.04_all-dependencies:v24-0

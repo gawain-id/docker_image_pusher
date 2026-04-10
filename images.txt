@@ -1,3 +1,6 @@
+# redis
+redis
+
 # appsmith-ee
 index.docker.io/appsmith/appsmith-ee:latest
 

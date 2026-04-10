@@ -1,9 +1,12 @@
+# appsmith-ee
+index.docker.io/appsmith/appsmith-ee:latest
+
 #kafka-ui
-ghcr.io/kafbat/kafka-ui:latest
+#ghcr.io/kafbat/kafka-ui:latest
 
 #kafka
-apache/kafka:4.2.0
-apache/kafka-native:4.2.0
+#apache/kafka:4.2.0
+#apache/kafka-native:4.2.0
 
 # gem5
 #ghcr.io/gem5/ubuntu-24.04_all-dependencies:v24-0

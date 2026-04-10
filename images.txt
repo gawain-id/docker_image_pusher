@@ -2,8 +2,8 @@
 ghcr.io/kafbat/kafka-ui:latest
 
 #kafka
-#apache/kafka:3.9.0
-#public.ecr.aws/bitnami/kafka:3.9.0
+apache/kafka:4.2.0
+apache/kafka-native:4.2.0
 
 # gem5
 #ghcr.io/gem5/ubuntu-24.04_all-dependencies:v24-0

@@ -1,5 +1,9 @@
+
+processmaker/pm4-core:4.1.21
+
+#
 # redis
-redis
+#redis
 
 # appsmith-ee
 index.docker.io/appsmith/appsmith-ee:latest

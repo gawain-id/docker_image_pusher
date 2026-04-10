@@ -1,3 +1,5 @@
+# mysql
+mysql:5.7
 
 processmaker/pm4-core:4.1.21
 

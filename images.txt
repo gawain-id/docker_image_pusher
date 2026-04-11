@@ -1,9 +1,10 @@
 # nginx
 nginx:alpine
 # mysql
-mysql:8.0
+#mysql:8.0
+mysql:8.4
 #redis
-redis:7-alpine
+#redis:7-alpine
 
 #postgres
 #postgres:15

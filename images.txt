@@ -1,5 +1,12 @@
+# nginx
+nginx:alpine
+# mysql
+mysql:8.0
+#redis
+redis:7-alpine
+
 #postgres
-postgres:15
+#postgres:15
 
 # Ubuntu
 # ubuntu:20.04

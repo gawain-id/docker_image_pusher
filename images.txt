@@ -1,7 +1,10 @@
-# mysql
-mysql:5.7
+# Ubuntu
+ubuntu:20.04
 
-processmaker/pm4-core:4.1.21
+# mysql
+#mysql:5.7
+
+#processmaker/pm4-core:4.1.21
 
 #
 # redis

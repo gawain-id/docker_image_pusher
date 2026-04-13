@@ -1,5 +1,8 @@
+#php-fpm
+laradock/php-fpm:latest-8.1
+
 # processmaker
-processmaker4dev/nayra-engine:next
+#processmaker4dev/nayra-engine:next
 
 # nginx
 #nginx:alpine

@@ -1,4 +1,6 @@
-#php-fpm
+#laradock
+#laradock/php-fpm:latest-8.1
+laradock/workspace:latest-8.1
 laradock/php-fpm:latest-8.1
 
 # processmaker

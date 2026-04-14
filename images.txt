@@ -1,7 +1,9 @@
+openapitools/openapi-generator-cli:v5.1.1
+
 #laradock
 #laradock/php-fpm:latest-8.1
-laradock/workspace:latest-8.1
-laradock/php-fpm:latest-8.1
+#laradock/workspace:latest-8.1
+#laradock/php-fpm:latest-8.1
 
 # processmaker
 #processmaker4dev/nayra-engine:next

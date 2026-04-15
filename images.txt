@@ -1,6 +1,7 @@
 # pm docker
 nginx:1.25-alpine
 redis:7-alpine
+php:8.3-fpm
 
 # processmaker4dev
 #processmaker4dev/nayra-engine:next

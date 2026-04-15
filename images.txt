@@ -1,6 +1,9 @@
-# processmaker4dev
-processmaker4dev/nayra-engine:next
+# pm docker
+nginx:1.25-alpine
+redis:7-alpine
 
+# processmaker4dev
+#processmaker4dev/nayra-engine:next
 #openapitools/openapi-generator-cli:v5.1.1
 
 #laradock
@@ -37,7 +40,7 @@ processmaker4dev/nayra-engine:next
 #redis
 
 # appsmith-ee
-index.docker.io/appsmith/appsmith-ee:latest
+#index.docker.io/appsmith/appsmith-ee:latest
 
 #kafka-ui
 #ghcr.io/kafbat/kafka-ui:latest

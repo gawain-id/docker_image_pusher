@@ -1,7 +1,9 @@
 # pm docker
-nginx:1.25-alpine
-redis:7-alpine
-php:8.3-fpm
+#nginx:1.25-alpine
+#redis:7-alpine
+#php:8.3-fpm
+
+docker.io/library/php:7.2.8-cli-stretch
 
 # processmaker4dev
 #processmaker4dev/nayra-engine:next

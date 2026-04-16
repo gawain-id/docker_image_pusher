@@ -2,8 +2,13 @@
 #nginx:1.25-alpine
 #redis:7-alpine
 #php:8.3-fpm
-
-docker.io/library/php:7.2.8-cli-stretch
+#docker.io/library/php:7.2.8-cli-stretch
+docker.io/library/php:8.0.30-cli-buster
+guligo/jdk-maven-ant
+mcr.microsoft.com/dotnet/core/sdk:2.2
+node:14.4.0
+debian:9.5
+r-base:3.6.1
 
 # processmaker4dev
 #processmaker4dev/nayra-engine:next

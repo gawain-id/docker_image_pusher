@@ -1,8 +1,10 @@
 ## zabbix
-mysql:8.0-oracle
-zabbix/zabbix-java-gateway:ubuntu-7.4-latest
-zabbix/zabbix-server-mysql:ubuntu-7.4-latest
-zabbix/zabbix-web-nginx-mysql:ubuntu-7.4-latest
+#mysql:8.0-oracle
+#zabbix/zabbix-java-gateway:ubuntu-7.4-latest
+#zabbix/zabbix-server-mysql:ubuntu-7.4-latest
+#zabbix/zabbix-web-nginx-mysql:ubuntu-7.4-latest
+zabbix/zabbix-agent:ubuntu-7.4-latest
+percona:8.0
 
 # pm docker
 #nginx:1.25-alpine

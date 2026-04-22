@@ -1,6 +1,11 @@
+## lx
+nginx:1.10
+pretzlaw/php:5.3-fpm
+memcached:1.4
+
 ## debian 6m 7
 #debian/eol:bullseye
-debian/eol:wheezy
+#debian/eol:wheezy
 
 ## zabbix
 #mysql:8.0-oracle

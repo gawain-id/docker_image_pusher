@@ -1,5 +1,6 @@
-## debian 6
-debian/eol:bullseye
+## debian 6m 7
+#debian/eol:bullseye
+debian/eol:wheezy
 
 ## zabbix
 #mysql:8.0-oracle

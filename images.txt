@@ -1,5 +1,5 @@
-## debian
-docker.io/library/debian:6
+## debian 6
+debian/eol:bullseye
 
 ## zabbix
 #mysql:8.0-oracle

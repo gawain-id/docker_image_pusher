@@ -8,7 +8,7 @@
 #devilbox/php-fpm:5.3-slim
 #devilbox/php-fpm:5.3-work
 
-artefactual/atom:latest
+##artefactual/atom:latest
 artefactual/gearmand:latest
 
 ## debian 6m 7

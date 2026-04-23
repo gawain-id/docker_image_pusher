@@ -1,3 +1,6 @@
+## windows
+dockurr/windows
+
 ## lx
 #nginx:1.10
 #pretzlaw/php:5.3-fpm

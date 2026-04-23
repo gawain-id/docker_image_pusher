@@ -3,10 +3,13 @@
 #pretzlaw/php:5.3-fpm
 #memcached:1.4
 #ubuntu:14.04
-devilbox/php-fpm:5.3-base
-devilbox/php-fpm:5.3-prod
-devilbox/php-fpm:5.3-slim
-devilbox/php-fpm:5.3-work
+#devilbox/php-fpm:5.3-base
+#devilbox/php-fpm:5.3-prod
+#devilbox/php-fpm:5.3-slim
+#devilbox/php-fpm:5.3-work
+
+artefactual/atom:latest
+artefactual/gearmand:latest
 
 ## debian 6m 7
 #debian/eol:bullseye

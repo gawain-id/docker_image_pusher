@@ -1,5 +1,10 @@
+## mysql postgres redis
+mysql:8-oracle
+postgres:16
+redis:latest
+
 ## windows
-dockurr/windows
+#dockurr/windows
 
 ## lx
 #nginx:1.10

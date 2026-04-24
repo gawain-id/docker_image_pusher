@@ -1,7 +1,10 @@
+## low code
+nocobase/nocobase:latest-full
+
 ## mysql postgres redis
-mysql:8-oracle
-postgres:16
-redis:latest
+#mysql:8-oracle
+#postgres:16
+#redis:latest
 
 ## windows
 #dockurr/windows

@@ -1,5 +1,9 @@
+## Bonita
+bonitasoft/bonita-postgres:16.4
+bonita:2024.3
+
 ## low code
-nocobase/nocobase:latest-full
+#nocobase/nocobase:latest-full
 
 ## mysql postgres redis
 #mysql:8-oracle

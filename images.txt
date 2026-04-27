@@ -1,6 +1,9 @@
 # kie
-jboss/business-central-workbench-showcase:latest
-jboss/kie-server-showcase:latest
+apache/incubator-kie-sandbox-webapp:10.1.0
+apache/incubator-kie-kogito-data-index-postgresql:10.1.0
+apache/incubator-kie-kogito-jobs-service-postgresql:10.1.0
+apache/incubator-kie-sonataflow-management-console:10.1.0
+apache/incubator-kie-sonataflow-devmode:10.1.0
 
 ## Bonita
 #bonitasoft/bonita-postgres:16.4

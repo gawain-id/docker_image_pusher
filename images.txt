@@ -1,9 +1,10 @@
 # kie
-apache/incubator-kie-sandbox-webapp:10.1.0
-apache/incubator-kie-kogito-data-index-postgresql:10.1.0
-apache/incubator-kie-kogito-jobs-service-postgresql:10.1.0
-apache/incubator-kie-sonataflow-management-console:10.1.0
-apache/incubator-kie-sonataflow-devmode:10.1.0
+#apache/incubator-kie-sandbox-webapp:10.1.0
+#apache/incubator-kie-kogito-data-index-postgresql:10.1.0
+#apache/incubator-kie-kogito-jobs-service-postgresql:10.1.0
+#apache/incubator-kie-sonataflow-management-console:10.1.0
+#apache/incubator-kie-sonataflow-devmode:10.1.0
+quay.io/keycloak/keycloak:24.0.3
 
 ## Bonita
 #bonitasoft/bonita-postgres:16.4

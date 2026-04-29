@@ -1,5 +1,6 @@
 ## apache camel
-ghcr.io/apache/camel-karavan:latest
+#ghcr.io/apache/camel-karavan:latest
+registry:2
 
 ## kie
 #apache/incubator-kie-sandbox-webapp:10.1.0

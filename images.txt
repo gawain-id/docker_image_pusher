@@ -1,6 +1,13 @@
+## windmill
+ghcr.io/windmill-labs/windmill
+ghcr.io/windmill-labs/windmill-extra:latest
+docker:dind
+ghcr.io/windmill-labs/caddy-l4:latest
+
 ## imixs
-postgres:9.6.1
-imixs/imixs-microservice
+#postgres:9.6.1
+#imixs/imixs-microservice
+imixs/open-bpmn:latest
 
 ## apache camel
 #ghcr.io/apache/camel-karavan:latest

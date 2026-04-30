@@ -1,7 +1,7 @@
 ## windmill
 ghcr.io/windmill-labs/windmill:main
 
-#ghcr.io/windmill-labs/windmill-extra:latest
+ghcr.io/windmill-labs/windmill-extra:latest
 #docker:dind
 #ghcr.io/windmill-labs/caddy-l4:latest
 

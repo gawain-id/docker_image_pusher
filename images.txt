@@ -1,7 +1,10 @@
-## windmill
-ghcr.io/windmill-labs/windmill:main
+## jbpm
+quay.io/kiegroup/jbpm-server-full
 
-ghcr.io/windmill-labs/windmill-extra:latest
+## windmill
+#ghcr.io/windmill-labs/windmill:main
+
+#ghcr.io/windmill-labs/windmill-extra:latest
 #docker:dind
 #ghcr.io/windmill-labs/caddy-l4:latest
 

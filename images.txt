@@ -1,5 +1,8 @@
+## docker
+docker.io/library/drupal:10-apache
+
 ## jbpm
-quay.io/kiegroup/jbpm-server-full
+#quay.io/kiegroup/jbpm-server-full
 
 ## windmill
 #ghcr.io/windmill-labs/windmill:main

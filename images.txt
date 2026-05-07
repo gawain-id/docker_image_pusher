@@ -1,7 +1,8 @@
 #appsmith/appsmith-ee:latest
 #cortezaproject/corteza-server:2024.9
 #cortezaproject/corteza-webapp:2024.9
-percona:8.0
+#percona:8.0
+cortezaproject/corteza:2024.9
 
 ## docker
 #docker.io/library/drupal:10-apache

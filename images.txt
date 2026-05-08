@@ -1,4 +1,5 @@
-kestra/kestra:latest
+#kestra/kestra:latest
+apache/airflow:3.2.1
 
 #fonoster/routr
 #appsmith/appsmith-ee:latest

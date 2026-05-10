@@ -12,6 +12,11 @@ env:
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
 
+  ORACLE_REGISTRY: "${{ secrets.ORACLE_REGISTRY }}"
+  ORACLE_NAME_SPACE: "${{ secrets.ORACLE_NAME_SPACE }}"
+  ORACLE_REGISTRY_USER: "${{ secrets.ORACLE_REGISTRY_USER }}"
+  ORACLE_REGISTRY_PASSWORD: "${{ secrets.ORACLE_REGISTRY_PASSWORD }}"
+
 jobs:
 
   build:
@@ -58,6 +63,7 @@ jobs:
     - name: Build and push image Aliyun
       run: |
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+        docker login -u $ORACLE_REGISTRY_USER -p $ORACLE_REGISTRY_PASSWORD $ORACLE_REGISTRY
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map

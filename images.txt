@@ -1,5 +1,5 @@
 ## oracle soa suite
-container-registry.oracle.com/middleware/soasuite:14.1.2
+container-registry.oracle.com/middleware/soasuite:14.1.2.0-jdk17-ol9-241205
 
 ## n8n
 #n8nio/runners:stable

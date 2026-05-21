@@ -1,9 +1,19 @@
+## budibase
+postgres:16
+budibase/database:2.1.0
+minio/minio
+budibase/proxy
+budibase/worker
+redis
+ghcr.io/berriai/litellm:main-v1.83.10-stable
+budibase/apps
+
 ## convertigo
-couchdb:3.4.2
-httpd:latest
-baserow/baserow:1.30.1
-timescale/timescaledb:latest-pg16
-convertigo:latest
+#couchdb:3.4.2
+#httpd:latest
+#baserow/baserow:1.30.1
+#timescale/timescaledb:latest-pg16
+#convertigo:latest
 
 ## oracle soa suite
 #container-registry.oracle.com/middleware/soasuite:14.1.2.0-jdk17-ol9-241205

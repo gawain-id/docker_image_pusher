@@ -1,5 +1,6 @@
 ## keycloak
-quay.io/keycloak/keycloak:26.6.2
+quay.io/keycloak/keycloak:latest
+postgres:16
 
 ## huly
 #docker.redpanda.com/redpandadata/redpanda:v24.3.6

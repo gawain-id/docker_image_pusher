@@ -1,5 +1,9 @@
+## joomla
+
+joomla:latest
+
 ## keycloak
---platform=linux/amd64 quay.io/keycloak/keycloak:latest
+#--platform=linux/amd64 quay.io/keycloak/keycloak:latest
 
 #postgres:16
 

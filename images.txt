@@ -1,6 +1,9 @@
+## fineract
+apache/fineract
+
 ## joomla
 
-joomla:latest
+#joomla:latest
 
 ## keycloak
 #--platform=linux/amd64 quay.io/keycloak/keycloak:latest

@@ -5,8 +5,8 @@
 #grafana/loki:2.9.2
 #prom/prometheus:v2.47.2
 #apache/fineract:latest
-mariadb:11.4
-openmf/web-app:latest
+#mariadb:11.4
+openmf/web-app
 
 ## joomla
 

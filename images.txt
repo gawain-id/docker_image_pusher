@@ -6,7 +6,7 @@
 #prom/prometheus:v2.47.2
 #apache/fineract:latest
 #mariadb:11.4
-openmf/web-app
+openmf/web-app:dev
 
 ## joomla
 

@@ -4,7 +4,7 @@ grafana/grafana-oss:10.2.0
 postgres:18.3
 grafana/loki:2.9.2
 prom/prometheus:v2.47.2
-fineract:latest
+apache/fineract:latest
 
 ## joomla
 

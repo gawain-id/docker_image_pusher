@@ -1,7 +1,12 @@
+## tb
+bitnamilegacy/kafka:4.0
+thingsboard/tb-node:4.3.1.2
+thingsboard/tb-edge-pe:4.3.1.1EDGEPE
+
 ## killbill
-killbill/killbill:0.24.16
-killbill/kaui:4.0.4
-killbill/mariadb:0.24
+#killbill/killbill:0.24.16
+#killbill/kaui:4.0.4
+#killbill/mariadb:0.24
 
 ## fineract
 #grafana/tempo:2.2.4

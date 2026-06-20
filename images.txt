@@ -1,3 +1,8 @@
+## killbill
+killbill/killbill:0.24.16
+killbill/kaui:4.0.4
+killbill/mariadb:0.24
+
 ## fineract
 #grafana/tempo:2.2.4
 #grafana/grafana-oss:10.2.0
@@ -6,7 +11,7 @@
 #prom/prometheus:v2.47.2
 #apache/fineract:latest
 #mariadb:11.4
-openmf/web-app:dev
+#openmf/web-app:dev
 
 ## joomla
 

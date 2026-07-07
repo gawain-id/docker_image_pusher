@@ -1,7 +1,10 @@
+## ROS
+ros:rolling-ros-base-noble
+
 ## tb
-bitnamilegacy/kafka:4.0
-thingsboard/tb-node:4.3.1.2
-thingsboard/tb-edge-pe:4.3.1.1EDGEPE
+#bitnamilegacy/kafka:4.0
+#thingsboard/tb-node:4.3.1.2
+#thingsboard/tb-edge-pe:4.3.1.1EDGEPE
 
 ## killbill
 #killbill/killbill:0.24.16

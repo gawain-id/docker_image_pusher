@@ -1,5 +1,7 @@
+aos-preview-app:latest
+
 ## ROS
-ros:rolling-ros-base-noble
+#ros:rolling-ros-base-noble
 
 ## tb
 #bitnamilegacy/kafka:4.0

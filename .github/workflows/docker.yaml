@@ -24,11 +24,148 @@ jobs:
           sudo chmod 711 /var/lib/docker /var/lib/docker/containers
           sudo systemctl restart docker || sudo service docker restart
           docker system prune -af --volumes || true
-          docker buildx prune -af || true
           df -hT
 
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Docker Setup Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Build and push image Aliyun
+        run: |
+          set -e
+
+          if [ ! -f images.txt ]; then
+            echo "Error: images.txt not found"
+            exit 1
+          fi
+
+          docker login -u "$ALIYUN_REGISTRY_USER" -p "$ALIYUN_REGISTRY_PASSWORD" "$ALIYUN_REGISTRY"
+
+          # 通用解析函数：将一行拆分为 PARSED_PLATFORM, PARSED_ALIAS, PARSED_IMAGE
+          parse_line() {
+            PARSED_PLATFORM=""
+            PARSED_ALIAS=""
+            PARSED_IMAGE=""
+
+            # 去掉行内 # 注释和首尾空白
+            local clean_line="${1%%#*}"
+            read -ra tokens <<< "$clean_line"
+
+            local i=0
+            while [ $i -lt ${#tokens[@]} ]; do
+              local tok="${tokens[$i]}"
+              case "$tok" in
+                --platform=*)
+                  PARSED_PLATFORM="${tok#--platform=}"
+                  ;;
+                --platform)
+                  i=$((i + 1))
+                  PARSED_PLATFORM="${tokens[$i]}"
+                  ;;
+                --alias=*)
+                  PARSED_ALIAS="${tok#--alias=}"
+                  ;;
+                --alias)
+                  i=$((i + 1))
+                  PARSED_ALIAS="${tokens[$i]}"
+                  ;;
+                *)
+                  PARSED_IMAGE="$tok"
+                  ;;
+              esac
+              i=$((i + 1))
+            done
+          }
+
+          # 第一遍扫描：判断同名但不同命名空间的镜像
+          declare -A duplicate_images
+          declare -A temp_map
+
+          while IFS= read -r line || [ -n "$line" ]; do
+            parse_line "$line"
+            [[ -z "$PARSED_IMAGE" ]] && continue
+
+            image_no_digest="${PARSED_IMAGE%%@*}"
+            image_name_tag="${image_no_digest##*/}"
+            image_name="${image_name_tag%%:*}"
+
+            # 提取命名空间（与你原脚本逻辑一致）
+            IFS='/' read -ra parts <<< "$image_no_digest"
+            if [ ${#parts[@]} -eq 3 ]; then
+              name_space="${parts[1]}"
+            elif [ ${#parts[@]} -eq 2 ]; then
+              name_space="${parts[0]}"
+            else
+              name_space=""
+            fi
+            ns_key="${name_space}_"
+
+            if [[ -n "${temp_map[$image_name]}" ]]; then
+              if [[ "${temp_map[$image_name]}" != "$ns_key" ]]; then
+                echo "duplicate image name: $image_name"
+                duplicate_images["$image_name"]="true"
+              fi
+            else
+              temp_map["$image_name"]="$ns_key"
+            fi
+          done < images.txt
+
+          # 第二遍执行：拉取、打标、推送并立即清理
+          while IFS= read -r line || [ -n "$line" ]; do
+            parse_line "$line"
+            [[ -z "$PARSED_IMAGE" ]] && continue
+
+            echo "=============================================================================="
+            echo "Before pull: $(df -h / | awk 'NR==2 {print $4 " available (" $5 " used)"}')"
+            echo "Parsed -> image: [$PARSED_IMAGE] | platform: [${PARSED_PLATFORM:-none}] | alias: [${PARSED_ALIAS:-none}]"
+
+            if [ -n "$PARSED_PLATFORM" ]; then
+              docker pull --platform "$PARSED_PLATFORM" "$PARSED_IMAGE"
+              platform_prefix="${PARSED_PLATFORM//\//_}_"
+            else
+              docker pull "$PARSED_IMAGE"
+              platform_prefix=""
+            fi
+
+            image_no_digest="${PARSED_IMAGE%%@*}"
+            image_name_tag="${image_no_digest##*/}"
+            image_name="${image_name_tag%%:*}"
+
+            if [[ "$image_name_tag" == *:* ]]; then
+              image_tag="${image_name_tag#*:}"
+            else
+              image_tag="latest"
+            fi
+
+            IFS='/' read -ra parts <<< "$image_no_digest"
+            if [ ${#parts[@]} -eq 3 ]; then
+              name_space="${parts[1]}"
+            elif [ ${#parts[@]} -eq 2 ]; then
+              name_space="${parts[0]}"
+            else
+              name_space=""
+            fi
+
+            name_space_prefix=""
+            if [[ -n "${duplicate_images[$image_name]}" && -n "$name_space" ]]; then
+              name_space_prefix="${name_space}_"
+            fi
+
+            if [ -n "$PARSED_ALIAS" ]; then
+              target_name_tag="${PARSED_ALIAS}:${image_tag}"
+            else
+              target_name_tag="${image_name_tag}"
+            fi
+
+            new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/${platform_prefix}${name_space_prefix}${target_name_tag}"
+
+            echo "docker tag \"$PARSED_IMAGE\" \"$new_image\""
+            docker tag "$PARSED_IMAGE" "$new_image"
+
+            echo "docker push \"$new_image\""
+            docker push "$new_image"
+
+            echo "Cleaning up local images..."
+            docker rmi "$PARSED_IMAGE" "$new_image" 2>/dev/null || true
+            docker image prune -f >/dev/null 2>&1 || true
+            echo "After cleanup: $(df -h / | awk 'NR==2 {print $4 " available (" $5 " used)"}')"
+          done < images.txt

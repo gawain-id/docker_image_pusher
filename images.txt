@@ -1,6 +1,6 @@
 # mysql
-mysql:8
-mysql:26
+#mysql:8
+#mysql:26
 
 # math
 #sagemath/sagemath
@@ -15,7 +15,7 @@ mysql:26
 #thingsboard/tb-web-report:4.4.0.2
 #postgres:18
 #bitnamilegacy/kafka:4.0
-#thingsboard/tb-node:4.4.0.2
+thingsboard/tb-node:4.4.0.2
 
 ## killbill
 #killbill/killbill:0.24.16

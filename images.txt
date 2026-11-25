@@ -1,5 +1,6 @@
 # mysql
 mysql:8
+mysql:26
 
 # math
 #sagemath/sagemath

@@ -1,6 +1,10 @@
+# pg
+postgres:17
+
 # mysql
 #mysql:8
 #mysql:26
+mysql:8-oracle
 
 # math
 #sagemath/sagemath

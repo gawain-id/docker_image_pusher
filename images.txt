@@ -1,10 +1,10 @@
 # pg
-postgres:17
+#postgres:17
 
 # mysql
 #mysql:8
 #mysql:26
-mysql:8-oracle
+#mysql:8-oracle
 
 # math
 #sagemath/sagemath
@@ -15,11 +15,11 @@ mysql:8-oracle
 #ros:rolling-ros-base-noble
 
 ## tb
-#thingsboard/tb-edge-pe:4.3.1.1EDGEPE
-#thingsboard/tb-web-report:4.4.0.2
+thingsboard/tb-edge-pe:4.3.1.1EDGEPE
+thingsboard/tb-web-report:4.4.0.2
 #postgres:18
 #bitnamilegacy/kafka:4.0
-thingsboard/tb-node:4.4.0.2
+#thingsboard/tb-node:4.4.0.2
 
 ## killbill
 #killbill/killbill:0.24.16

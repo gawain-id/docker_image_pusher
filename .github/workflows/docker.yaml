@@ -25,10 +25,10 @@ jobs:
     steps:
     - name: Before freeing up disk space
       run: |
-        echo "Before freeing up disk space"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
+            df -h
+            docker system prune -af --volumes || true
+            sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+            df -h
 
     # 增加可用磁盘空间
     - name: Maximize build space

@@ -1,3 +1,8 @@
+#
+postgres:17-alpine
+redis:8-alpine
+nginx:stable-alpine
+
 # pg
 #postgres:17
 
@@ -15,8 +20,8 @@
 #ros:rolling-ros-base-noble
 
 ## tb
-thingsboard/tb-edge-pe:4.3.1.1EDGEPE
-thingsboard/tb-web-report:4.4.0.2
+#thingsboard/tb-edge-pe:4.3.1.1EDGEPE
+#thingsboard/tb-web-report:4.4.0.2
 #postgres:18
 #bitnamilegacy/kafka:4.0
 #thingsboard/tb-node:4.4.0.2
